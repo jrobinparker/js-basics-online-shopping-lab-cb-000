@@ -10,7 +10,7 @@ function setCart(c) {
 }
 
 function addToCart(item) {
-  
+  item = Object.assign({}, item, {itemName: itemPrice})
   cart.push(item)
   
 }
